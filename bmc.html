@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خريطة الأعمال - BMC</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 20px;
+            background-color: white;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #000;
+            margin: 0 auto;
+        }
+        td {
+            border: 1px solid #000;
+            padding: 5px;
+            vertical-align: top;
+            text-align: right;
+            font-size: 14px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .button {
+          position: relative;
+          overflow: hidden;
+          height: 3rem;
+          padding: 0 2rem;
+          border-radius: 1.5rem;
+          background: #3d3a4e;
+          background-size: 400%;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+        }
+        .button a{
+            color: white;
+            text-decoration: none;
+        }
+        .button:hover::before {
+          transform: scaleX(1);
+        }
+        .button-content {
+          position: relative;
+          z-index: 1;
+        }
+        .button::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: scaleX(0);
+          transform-origin: 0 50%;
+          width: 100%;
+          height: inherit;
+          border-radius: inherit;
+          background: linear-gradient(
+            82.3deg,
+            rgba(150, 93, 233, 1) 10.8%,
+            rgba(99, 88, 238, 1) 94.3%
+          );
+          transition: all 0.475s;
+        }
+    </style>
+</head>
+<body>
+    <button class="button">
+        <span class="button-content"><a href="./index.html">Home</a></span>
+    </button>
+    <div class="header">
+        <h2>خريطة الأعمال - BMC لمشروع إعادة تدوير البلاستيك</h2>
+    </div>
+
+    <table>
+        <tr>
+            <td colspan="2" rowspan="2" style="width: 15%;">
+                <span class="bold">العلاقات مع العملاء</span><br><br>
+                1. <span class="bold">خدمة عملاء مستمرة</span><br>
+                2. <span class="bold">برامج توعوية</span><br>
+                3. <span class="bold">عروض للشركاء البيئيين</span>
+            </td>
+            <td colspan="2" style="width: 15%;">
+                <span class="bold">القيم المقترحة</span><br><br>
+                1. <span class="bold">تقليل التلوث البيئي</span><br>
+                2. <span class="bold">تحويل النفايات إلى منتجات مفيدة</span>
+            </td>
+           
+            <td colspan="2" style="width: 15%;">
+                <span class="bold">الأنشطة الرئيسية</span><br><br>
+                1. <span class="bold">جمع وفرز البلاستيك</span><br>
+                2. <span class="bold">إعادة تدوير وتصنيع منتجات جديدة</span>
+            </td>
+            <td colspan="2" rowspan="2" style="width: 15%;">
+                <span class="bold">الشركاء الرئيسيون</span><br><br>
+                1. <span class="bold">شركات جمع النفايات</span><br>
+                2. <span class="bold">مصانع تحويل البلاستيك</span><br>
+                3. <span class="bold">منظمات بيئية</span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <span class="bold">القنوات</span><br><br>
+                1. <span class="bold">منصات التواصل الاجتماعي</span><br>
+                2. <span class="bold">موقع إلكتروني</span><br>
+                3. <span class="bold">معارض ومؤتمرات بيئية</span>
+            </td>
+            
+            <td colspan="2">
+                <span class="bold">الموارد الرئيسية</span><br><br>
+                1. <span class="bold">معدات إعادة التدوير</span><br>
+                2. <span class="bold">فريق فني متخصص</span><br>
+                3. <span class="bold">رخص بيئية وتشغيلية</span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" rowspan="2" style="width: 30%;">
+                <span class="bold">هيكل التكاليف</span><br><br>
+                1. <span class="bold">تكلفة جمع ونقل البلاستيك</span><br>
+                2. <span class="bold">تكلفة المعالجة والتصنيع</span><br>
+                3. <span class="bold">تكاليف تشغيلية وتسويقية</span>
+            </td>
+           
+            <td colspan="4" style="width: 30%;">
+                <span class="bold">مصادر الإيرادات</span><br><br>
+                1. <span class="bold">بيع المنتجات البلاستيكية المعاد تدويرها</span><br>
+                2. <span class="bold">شراكات تجارية</span><br>
+                3. <span class="bold">دعم من منظمات بيئية أو حكومية</span>
+            </td>
+        </tr>
+        <tr></tr>
+    </table>
+</body>
+</html>

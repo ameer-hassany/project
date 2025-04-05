@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أزرار متحركة</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #282c34;
+            font-family: Arial, sans-serif;
+        }
+        .button-container {
+            display: flex;
+            gap: 15px;
+        }
+        .btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+        }
+        .btn-1 { background: #ff5733; }
+        .btn-2 { background: #33ff57; }
+        .btn-3 { background: #3357ff; }
+        .btn-4 { background: #095845; }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="btn btn-1" onclick="navigateTo('persona.html')" >person </button>
+        <button class="btn btn-2" onclick="navigateTo('problem.html')">pov</button>
+        <button class="btn btn-3" onclick="navigateTo('map.html')">map</button>
+        <button class="btn btn-4" onclick="navigateTo('bmc.html')">bmc</button>
+    </div>
+
+    <script>
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+        .container {
+            width: 60%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .section {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            text-align: right;
+        }
+        .button {
+          position: relative;
+          overflow: hidden;
+          height: 3rem;
+          padding: 0 2rem;
+          border-radius: 1.5rem;
+          background: #3d3a4e;
+          background-size: 400%;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+        }
+        .button a{
+            color: white;
+            text-decoration: none;
+        }
+        .button:hover::before {
+          transform: scaleX(1);
+        }
+        .button-content {
+          position: relative;
+          z-index: 1;
+        }
+        .button::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: scaleX(0);
+          transform-origin: 0 50%;
+          width: 100%;
+          height: inherit;
+          border-radius: inherit;
+          background: linear-gradient(
+            82.3deg,
+            rgba(150, 93, 233, 1) 10.8%,
+            rgba(99, 88, 238, 1) 94.3%
+          );
+          transition: all 0.475s;
+        }
+        .green { background-color: #c8e6c9; }
+        .blue { background-color: #bbdefb; }
+        .red { background-color: #ffcdd2; }
+        .yellow { background-color: #fff9c4; }
+        .purple { background-color: #e1bee7; }
+    </style>
+</head>
+<body>
+    <button class="button">
+        <span class="button-content"><a href="./index.html">Home</a></span>
+    </button>
+    <div class="container">
+        <div class="header">
+            <img src="./Leonardo_Phoenix_10_A_modest_Arab_woman_in_her_late_thirties_w_0.jpg" alt="صورة منة">
+            <h1>منة</h1>
+        </div>
+        <div style="display: flex;">
+            <div class="section blue" style="width: 50%; margin-left: 12px;">
+                <h2>المعلومات الشخصية</h2>
+                <p>العمر: 28 سنة</p>
+                <p>الحالة الاجتماعية: عزباء</p>
+                <p>الموقع: القاهرة، مصر</p>
+            </div>
+            <div class="section green" style="width: 50%;">
+                <h2>العمل</h2>
+                <p>مُدرّبة لياقة بدنية وصاحبة حساب على منصات التواصل الاجتماعي</p>
+                <p>العمل في مجالات صحية وبدنية</p>
+                <p>الدخل السنوي: 15,000 – 20,000 جنيه مصري</p>
+            </div>
+        </div>
+        <div style="display: flex;">
+            <div class="section purple" style="width: 50%; margin-left: 12px;">
+                <h2>التعامل مع التكنولوجيا</h2>
+                <p>تستخدم الفيسبوك والإنستجرام بشكل جيد</p>
+                <p>مستخدمة نشطة للواتساب وتويتر</p>
+                <p>تتابع الفيديوهات الخاصة بالعناية بالبشرة والتجميل على يوتيوب</p>
+                <p>الهاتف يعمل بنظام أندرويد</p>
+            </div>
+            <div class="section red" style="width: 50%;">
+                <h2>التحديات</h2>
+                <p>بحثها عن حلول مبتكرة للعناية بالبشرة دون تكاليف باهظة</p>
+                <p>تحاول الجمع بين العناية بالبشرة والممارسات البيئية المستدامة</p>
+                <p>تجد صعوبة في اختيار المنتجات التي تكون آمنة وفعالة في نفس الوقت</p>
+            </div>
+        </div>
+        <div class="section yellow">
+            <h2>طموح منة</h2>
+            <p>أن تجد حلولاً عملية لتحسين مظهر بشرتها باستخدام منتجات طبيعية وآمنة</p>
+            <p>تبحث عن طرق مستدامة لحماية البيئة مثل استخدام **البلاستيك المعاد تدويره** في منتجات العناية الشخصية</p>
+            <p>أن تكون رائدة في مجال العناية بالبشرة باستخدام مكونات طبيعية وفعّالة</p>
+        </div>
+    </div>
+</body>
+</html>
